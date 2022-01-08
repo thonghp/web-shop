@@ -1,0 +1,53 @@
+/* set up màu để sử dụng */
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+}
+/* set up màu để sử dụng */
+
+/* set default css ban đầu */
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem; /* set độ cao font chữ, đa phần font chữ trên web là 16px */
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+/* set default css ban đầu */
+
+/* responsive */
+
+/* chỉ định chiều rộng của 1 block */
+.grid {
+    width: 1200px;
+    max-width: 100%; /* khi width khác 1200px thì cái này sẽ dùng*/
+    margin: 0 auto;
+}
+/* chỉ định chiều rộng của 1 block */
+
+.grid_full-width {
+    width: 100%;
+}
+    /* cùng nằm trên 1 hàng ngang */
+    .grid_row {
+        display: flex;
+        flex-wrap: wrap; /* nếu con vượt quá độ dài của class này sẽ nhảy xuống hàng */
+    }
+    /* cùng nằm trên 1 hàng ngang */
+
+/* responsive */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* animation */
+
+
