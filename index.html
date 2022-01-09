@@ -66,6 +66,7 @@
                             </header>
                             <ul class="header__notify-list">
                                 <!-- header__notify-item--viewed dùng để xử lý cái nào chưa đọc thì có màu khác mốt xử lý backend -->
+
                                 <li class="header__notify-item header__notify-item--viewed">
                                     <a href="" class="header__notify-link">
                                         <img src="https://cf.shopee.vn/file/d1dd168e3dbb5f3aacb981c54f014abd" alt=""
@@ -145,6 +146,57 @@
     <footer class="footer">
 
     </footer>
+</div>
+
+<!-- modal layout là một cái khung trắng khi nhấn vào nhảy ra giữa trang như đăng ký/đăng nhập bên shoppee -->
+<div class="modal">
+    <!-- overplay là lớp phủ mờ mờ -->
+    <div class="modal__overplay">
+
+    </div>
+    <div class="modal__body">
+        <!-- form login/register -->
+        <div class="auth-form">
+            <div class="auth-form__container">
+                <div class="auth-form__header">
+                    <h3 class="auth-form__heading">Đăng ký</h3>
+                    <div class="auth-form__switch-btn">Đăng nhập</div>
+                </div>
+                <div class="auth-form__form">
+                    <div class="auth-form__group">
+                        <input type="text" class="auth-form__input" placeholder="Email hoặc số điện thoại">
+                    </div>
+                    <div class="auth-form__group">
+                        <input type="password" class="auth-form__input" placeholder="Mật khẩu">
+                    </div>
+                    <div class="auth-form__group">
+                        <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                    </div>
+                </div>
+                <div class="auth-form__aside">
+                    <p class="auth-form__policy-text">
+                        Bằng việc đăng ký, bạn đồng ý với HPT về
+                        <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
+                        <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
+                    </p>
+                </div>
+                <div class="auth-form__controls">
+                    <button class="btn auth-form__controls-back btn--normal">TRỞ LẠI</button>
+                    <button class="btn btn--primary">ĐĂNG KÝ</button>
+                </div>
+            </div>
+            <div class="auth-form__social">
+                <a href="" class="auth-form__social--facebook btn btn--size-s btn--with-icon">
+                    <i class="auth-form__social-icon fab fa-facebook-square"></i>
+                    <span class="auth-form__social-title">Kết nối với Facebook</span>
+                </a>
+                <a href="" class="auth-form__social--google btn btn--size-s btn--with-icon">
+                    <i class="auth-form__social-icon fab fa-google"></i>
+                    <span class="auth-form__social-title">Kết nối với Google</span>                    
+                </a>
+            </div>
+        </div>
+    </div>
 </div>
 
 <body>
