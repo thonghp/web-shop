@@ -35,15 +35,31 @@ html {
 }
 /* chỉ định chiều rộng của 1 block */
 
-.grid_full-width {
+.grid__full-width {
     width: 100%;
 }
-    /* cùng nằm trên 1 hàng ngang */
-    .grid_row {
-        display: flex;
-        flex-wrap: wrap; /* nếu con vượt quá độ dài của class này sẽ nhảy xuống hàng */
-    }
-    /* cùng nằm trên 1 hàng ngang */
+
+/* cùng nằm trên 1 hàng ngang */
+.grid__row {
+    display: flex;
+    flex-wrap: wrap; /* nếu con vượt quá độ dài của class này sẽ nhảy xuống hàng */
+    margin-left: -12px;
+    margin-right: -12px;
+}
+/* cùng nằm trên 1 hàng ngang */
+
+.grid__column-2 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 16.6667%;
+}   
+
+.grid__column-10 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 83.3334%;
+}    
+
 
 /* responsive */
 

@@ -1,6 +1,6 @@
 /* build header */
 
-.header {
+.app__header {
     height: var(--header-height);
     background-image: linear-gradient(0,#ff6433,#f53d2d); /* Kết hợp 2 màu trên cam dưới đỏ*/
 }
@@ -357,14 +357,6 @@
     font-weight: 400;
     color: var(--primary-color);
     cursor: pointer;
-}
-
-.auth-form__form {
-    
-}
-
-.auth-form__group {
-
 }
 
 .auth-form__input {
@@ -840,3 +832,73 @@
 /* logo thanh search cart */
 
 /* build header */
+
+/* build body */
+
+.app__container {
+    background-color: #f5f5f5;
+}
+
+/* Danh mục sản phẩm */
+
+.category {
+    background-color: var(--white-color);
+    border-radius: 2px;
+}
+
+.category__heading {
+    color: var(--text-color);
+    font-size: 1.7rem;
+    padding: 12px 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.category__heading-icon {
+    font-size: 1.4rem;
+    margin-right: 4px;
+    position: relative;
+    top: -1px;
+}
+
+.category-list {
+    padding: 0 0 8px 0;
+    list-style: none;
+    margin-left: 9px;
+}
+
+.category-item--active .category-item__link {
+    color: var(--primary-color);
+}
+
+.category-item--active .category-item__link::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 7px;
+    border: 4px solid;
+    transform: translateY(calc(-50% - 1px));
+    border-color: transparent transparent transparent var(--primary-color);
+}
+
+.category-item__link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    padding: 4px 16px;
+    display: block;
+    transition: right linear 0.1s;
+    right: 0;
+    position: relative;
+}
+
+.category-item__link:hover {
+    right: -4px;
+}
+
+/* Danh mục sản phẩm */
+
+/* sort và filter */
+
+/* sort và filter */
+
+/* build body */
